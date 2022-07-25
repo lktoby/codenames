@@ -1,7 +1,27 @@
 #!/usr/bin/python3
 
 PACKS = ["vanilla.txt", "duet.txt", "undercover.txt", "potter.txt", "cge.txt", 
-         "bgg.txt", "trucker.txt", "holiday.txt", "ages.txt", "blizzard.txt", "jack.txt" ]
+         "bgg.txt", "trucker.txt", "holiday.txt", "ages.txt", "blizzard.txt", 
+         "simpsons.txt", "jack.txt" ]
+
+#
+# 1. turn all words to uppercase letters
+# 2. sort all words 
+# 3. update the file
+#
+def process_file(filename):
+    table = list()
+
+    with open(filename) as f:
+        for line in f:
+            line = line.strip()
+            table.append(line.upper())
+    
+    table.sort()
+    with open(filename, "wt") as f:
+        for word in table:
+            f.write(word)
+            f.write("\n")
 
 #
 # 1. removes blanks, comments, and unwanted words
@@ -29,7 +49,8 @@ if __name__ == "__main__":
     result = []
     
     if len(sys.argv) == 2:
-        result = process_list(sys.argv[1])
+        process_file(sys.argv[1])
+        sys.exit(0)
     elif len(sys.argv) == 1:
         for pack in PACKS:
             words = process_list(pack)
