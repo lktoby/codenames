@@ -1,4 +1,4 @@
-##README
+# Codenames Word Pack
 
 This is a collection of word lists from different expansions and add-ons for Codenames.
 I use these word lists to create my own custom word pack for the online version of 
