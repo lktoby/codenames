@@ -15,7 +15,12 @@ def process_file(filename):
     with open(filename) as f:
         for line in f:
             line = line.strip()
-            table.append(line.upper())
+            if len(line) == 0:
+                continue
+            if line not in table:
+                table.append(line.upper())
+            else:
+                print("warning: duplicate found: %s\n"%line)
     
     table.sort()
     with open(filename, "wt") as f:
@@ -70,4 +75,5 @@ if __name__ == "__main__":
         for word in result:
             f.write(word)
             f.write("\n")
+        print("%d words added."%len(result))
     
