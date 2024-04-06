@@ -2,7 +2,7 @@
 
 PACKS = ["vanilla.txt", "duet.txt", "undercover.txt", "potter.txt", "cge.txt", 
          "bgg.txt", "trucker.txt", "holiday.txt", "ages.txt", "blizzard.txt", 
-         "simpsons.txt", "halloween.txt", "jack.txt" ]
+         "simpsons.txt", "halloween.txt", "authors.txt", "disney.txt", "jack.txt" ]
 
 #
 # 1. turn all words to uppercase letters
