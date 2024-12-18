@@ -1,18 +1,14 @@
-# Codenames Word Pack
+# codenames
+## how to play:
 
-This is a collection of word lists from different expansions and add-ons for Codenames.
-I use these word lists to create my own custom word pack for the online version of 
-Codenames, available at:
+1. run util/gameplay.py
+2. prompt.png will show
+3. pick 1 word from prompt.png and input it to the terminal
+4. it will tell you which color it is
+5. whichever color team has all of its colored cards picked wins
+6. if black card is picked then the team will immediately lose
+7. if you happened to pick a card with color the same as your team you get up to 3 consecutive picks
+8. if your pick is the other team or neutral then your turn will end
+9. every card can only be picked once per round
 
-https://codenames.game/
-
-To create the custom word pack, simply run:
-
-`./word.py`
-
-The word lists contain a list of words from that particular expansion/add-on. It uses
-the following syntax:
-
-1. If a line starts with the # (pound) sign, it is a comment
-2. If the word starts with the - (minus) sign, it is excluded from my aggregate word pack.
-3. If the word starts with the = (equal) sign, it is a duplicate word from earlier word packs.
+my code is a mess and the words are taken from https://github.com/jacksun007/codenames
