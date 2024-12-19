@@ -24,7 +24,8 @@ my code is a mess and the words are taken from https://github.com/jacksun007/cod
 - `requirements.txt` をインストール
 - `python util/gameplay.py` を実行すると遊べる
 
-##　遊び方
+## 遊び方
+
 1. プログラムを実行すると、`prompt.png`がすべてのカードを表示する
 2. `prompt.png`から1単語を選んでターミナルに入力する
 3. プログラムが入力した単語の色を表示する
